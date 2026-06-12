@@ -18,8 +18,8 @@ An Agentic AI-Based Legal Information and Compliance Assistance System featuring
 
 ```
 c:\project\legal ai\
-├── client/                     # React (Vite) + Tailwind CSS Frontend
-├── server/                     # Node.js Express Backend
+├── frontend/                   # React (Vite) + Tailwind CSS Frontend
+├── backend/                    # Node.js Express Backend
 │   ├── routes/                 # REST Endpoints (Auth, Chat, Docs, Compliance)
 │   ├── controllers/            # Logic controllers
 │   ├── services/               # Vector Store and Sync services
@@ -43,7 +43,7 @@ c:\project\legal ai\
 
 1. Clone or navigate to the project directory:
    ```bash
-   cd "c:\project\legal ai"
+   cd "d:\Desktop\Agentic AI project"
    ```
 
 2. Run the root installer script to automatically download all node dependencies for the root, backend, and frontend directories:
@@ -51,7 +51,7 @@ c:\project\legal ai\
    npm run install:all
    ```
 
-3. Configure environment variables. Edit the template `.env` inside `server/.env`:
+3. Configure environment variables. Edit the template `.env` inside `backend/.env`:
    ```env
    PORT=8080
    MONGO_URI=mongodb://127.0.0.1:27017/legal-ai
@@ -70,13 +70,13 @@ To run the full stack concurrently (Express server on port `8080` + Vite React f
 1. **Launch the Backend API Server**:
    In a new terminal window:
    ```bash
-   npm run server
+   npm run backend
    ```
 
 2. **Launch the Frontend Client**:
    In another terminal window:
    ```bash
-   npm run client
+   npm run frontend
    ```
 
 3. Open **[http://localhost:8081](http://localhost:8081)** in your browser!
